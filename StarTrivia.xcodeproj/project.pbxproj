@@ -12,6 +12,9 @@
 		030594F222C2B471005D05F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030594F022C2B471005D05F3 /* Main.storyboard */; };
 		030594F422C2B473005D05F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 030594F322C2B473005D05F3 /* Assets.xcassets */; };
 		030594F722C2B473005D05F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030594F522C2B473005D05F3 /* LaunchScreen.storyboard */; };
+		0305950122C2B946005D05F3 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 030594FE22C2B945005D05F3 /* Starjedi.ttf */; };
+		0305950222C2B946005D05F3 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 030594FF22C2B945005D05F3 /* Starjout.ttf */; };
+		0305950322C2B946005D05F3 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0305950022C2B945005D05F3 /* Starjhol.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		030594F322C2B473005D05F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		030594F622C2B473005D05F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		030594F822C2B473005D05F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		030594FE22C2B945005D05F3 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		030594FF22C2B945005D05F3 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		0305950022C2B945005D05F3 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +60,11 @@
 		030594EB22C2B471005D05F3 /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				0305950622C2B977005D05F3 /* Model */,
+				0305950722C2B982005D05F3 /* View */,
+				0305950822C2B998005D05F3 /* Controller */,
 				030594EC22C2B471005D05F3 /* AppDelegate.swift */,
+				0305950522C2B95F005D05F3 /* Resources */,
 				030594EE22C2B471005D05F3 /* SelectedPersonVC.swift */,
 				030594F022C2B471005D05F3 /* Main.storyboard */,
 				030594F322C2B473005D05F3 /* Assets.xcassets */,
@@ -62,6 +72,45 @@
 				030594F822C2B473005D05F3 /* Info.plist */,
 			);
 			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		0305950422C2B950005D05F3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				030594FE22C2B945005D05F3 /* Starjedi.ttf */,
+				0305950022C2B945005D05F3 /* Starjhol.ttf */,
+				030594FF22C2B945005D05F3 /* Starjout.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0305950522C2B95F005D05F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0305950422C2B950005D05F3 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0305950622C2B977005D05F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0305950722C2B982005D05F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0305950822C2B998005D05F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				030594F722C2B473005D05F3 /* LaunchScreen.storyboard in Resources */,
+				0305950322C2B946005D05F3 /* Starjhol.ttf in Resources */,
 				030594F422C2B473005D05F3 /* Assets.xcassets in Resources */,
+				0305950122C2B946005D05F3 /* Starjedi.ttf in Resources */,
+				0305950222C2B946005D05F3 /* Starjout.ttf in Resources */,
 				030594F222C2B471005D05F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
