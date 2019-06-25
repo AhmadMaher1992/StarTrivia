@@ -4,15 +4,15 @@
 //
 //  Created by maher on 6/25/19.
 //  Copyright © 2019 maher.eisa. All rights reserved.
-//
+
 
 import UIKit
 
-class ViewController: UIViewController {
+class SelectedPersonVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+      
     }
 
 
