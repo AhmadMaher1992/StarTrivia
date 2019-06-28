@@ -17,6 +17,7 @@
 		0305950322C2B946005D05F3 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0305950022C2B945005D05F3 /* Starjhol.ttf */; };
 		03760F2622C3897200543B0F /* BlackBGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03760F2522C3897200543B0F /* BlackBGView.swift */; };
 		03760F2922C3A42100543B0F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03760F2822C3A42100543B0F /* Constants.swift */; };
+		037743C722C54728005BBAE1 /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037743C622C54728005BBAE1 /* PersonApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0305950022C2B945005D05F3 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
 		03760F2522C3897200543B0F /* BlackBGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackBGView.swift; sourceTree = "<group>"; };
 		03760F2822C3A42100543B0F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		037743C622C54728005BBAE1 /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				030594EC22C2B471005D05F3 /* AppDelegate.swift */,
 				030594EE22C2B471005D05F3 /* SelectedPersonVC.swift */,
 				0305950522C2B95F005D05F3 /* Resources */,
+				037743C522C546E5005BBAE1 /* Services */,
 				03760F2722C38CC100543B0F /* Utils */,
 				030594F022C2B471005D05F3 /* Main.storyboard */,
 				030594F322C2B473005D05F3 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				03760F2822C3A42100543B0F /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		037743C522C546E5005BBAE1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				037743C622C54728005BBAE1 /* PersonApi.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				03760F2622C3897200543B0F /* BlackBGView.swift in Sources */,
 				030594EF22C2B471005D05F3 /* SelectedPersonVC.swift in Sources */,
 				030594ED22C2B471005D05F3 /* AppDelegate.swift in Sources */,
+				037743C722C54728005BBAE1 /* PersonApi.swift in Sources */,
 				03760F2922C3A42100543B0F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
