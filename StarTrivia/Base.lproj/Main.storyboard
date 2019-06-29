@@ -200,10 +200,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="8Y8-v0-ds7"/>
+                    <connections>
+                        <outlet property="birthYearLbl" destination="oJe-wt-aCU" id="eDf-gi-ooc"/>
+                        <outlet property="genderLbl" destination="u1y-Ig-Glh" id="NSr-Iv-Fi1"/>
+                        <outlet property="hairLbl" destination="BUZ-Ds-UP0" id="pUb-1I-8gd"/>
+                        <outlet property="heightLbl" destination="FLp-lj-FE6" id="qcO-Az-Xxy"/>
+                        <outlet property="massLbl" destination="2dP-ik-2tg" id="Bln-zy-V2r"/>
+                        <outlet property="nameLbl" destination="q3z-FN-mME" id="oq8-mz-Gpg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="-604"/>
+            <point key="canvasLocation" x="991" y="-609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZNd-Nq-9Cc">

@@ -8,7 +8,7 @@
 
 import Foundation
 class PersonApi {
-    func getRandomPersonUrlSession(){
+    func getRandomPersonUrlSession() -> Person{
         guard let url = URL(string: PERSON_URL) else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
@@ -20,17 +20,35 @@ class PersonApi {
             do{
                  let jsonAny = try  JSONSerialization.jsonObject(with: data, options: [])
                 guard let json = jsonAny as? [String: Any]  else{return}
-                print(json)
+                
+               let person = self.parsePersonManuel(json: json)
+                return person
+               
                 
             }catch{
                 debugPrint(error.localizedDescription)
+                return
             }
            
-            
-            
-            print("Data\(data)")
-            print("Response\(response)")
         }
         task.resume()
     }
+    
+    private func parsePersonManuel(json: [String : Any]) -> Person{
+        
+        let name = json["name"] as? String ?? ""
+        let height = json["height"] as? String ?? ""
+        let mass = json["mass"] as? String ?? ""
+        let hair = json["hair_color"] as? String ?? ""
+        let birthYear =  json["birth_year"] as? String ?? ""
+        let gender = json["gender"] as? String ?? ""
+        let homeworldUrl = json["homeworld"] as? String ?? ""
+        let filmUrls = json["films"] as? [String] ?? [String]()
+        let vechileUrls = json["vechiles"] as? [String] ?? [String]()
+        let starshipUrls = json["starships"] as? [String] ?? [String]()
+        //initialize Person Struct
+        return Person(name: name, height: height, mass: mass, hair: hair, birthYear: birthYear, gender:gender, homeWorldUrl: homeworldUrl, filmUrls: filmUrls, vechileUrls: vechileUrls, starShipUrls: starshipUrls )
+  
+
+     }
 }
