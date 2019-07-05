@@ -70,9 +70,7 @@
 			children = (
 				0305950622C2B977005D05F3 /* Model */,
 				0305950722C2B982005D05F3 /* View */,
-				0305950822C2B998005D05F3 /* Controller */,
-				030594EC22C2B471005D05F3 /* AppDelegate.swift */,
-				030594EE22C2B471005D05F3 /* SelectedPersonVC.swift */,
+				03FDA7A122CFE91B00062BCE /* Controler */,
 				0305950522C2B95F005D05F3 /* Resources */,
 				037743C522C546E5005BBAE1 /* Services */,
 				03760F2722C38CC100543B0F /* Utils */,
@@ -118,13 +116,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0305950822C2B998005D05F3 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		03760F2722C38CC100543B0F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +130,15 @@
 				037743C622C54728005BBAE1 /* PersonApi.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		03FDA7A122CFE91B00062BCE /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				030594EC22C2B471005D05F3 /* AppDelegate.swift */,
+				030594EE22C2B471005D05F3 /* SelectedPersonVC.swift */,
+			);
+			path = Controler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
