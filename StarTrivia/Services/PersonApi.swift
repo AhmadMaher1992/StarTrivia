@@ -8,11 +8,12 @@
 
 import Foundation
 class PersonApi {
-    func getRandomPersonUrlSession() -> Person{
+    func getRandomPersonUrlSession(completion: @escaping PersonResponseCompletion) {
         guard let url = URL(string: PERSON_URL) else {return}
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
                 debugPrint(error.debugDescription)
+                completion(nil)
                 return
             }
             
@@ -22,7 +23,7 @@ class PersonApi {
                 guard let json = jsonAny as? [String: Any]  else{return}
                 
                let person = self.parsePersonManuel(json: json)
-                return person
+               completion(person)
                
                 
             }catch{
