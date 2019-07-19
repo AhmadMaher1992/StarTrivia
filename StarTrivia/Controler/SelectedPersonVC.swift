@@ -30,16 +30,22 @@ class SelectedPersonVC: UIViewController {
         let random = Int.random(in: 1...87)
         personApi.getRandomPersonAlamoDecoder(id: random) { (person) -> (Void) in
             if let person = person {
-                self.nameLbl.text = person.name
-                self.heightLbl.text = person.height
-                self.massLbl.text = person.mass
-                self.hairLbl.text = person.hair
-                self.birthYearLbl.text = person.birthYear
-                self.genderLbl.text = person.gender
+             setupView(person: person)
             }
         }
         
+        //update UI Function
+        func setupView(person: Person){
+            nameLbl.text = person.name
+            heightLbl.text = person.height
+            massLbl.text = person.mass
+            hairLbl.text = person.hair
+            birthYearLbl.text = person.birthYear
+            genderLbl.text = person.gender
+    
     }
     
 }
+}
+
 
