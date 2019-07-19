@@ -27,6 +27,7 @@ class SelectedPersonVC: UIViewController {
     
     
     var personApi = PersonApi()
+    var person: Person!
    
     
     
@@ -41,6 +42,7 @@ class SelectedPersonVC: UIViewController {
         personApi.getRandomPersonAlamoDecoder(id: random) { (person) -> (Void) in
             if let person = person {
                 self.setupView(person: person)
+                self.person = person
             }
         }
         
@@ -56,15 +58,27 @@ class SelectedPersonVC: UIViewController {
         hairLbl.text = person.hair
         birthYearLbl.text = person.birthYear
         genderLbl.text = person.gender
-        // Fade in & out first way 
+        // Fade in & out first way
         homeworldBtn.isEnabled = !person.homeWorldUrl.isEmpty
         vehiclesBtn.isEnabled = !person.vechileUrls.isEmpty
         starshipsBtn.isEnabled = !person.starShipUrls.isEmpty
         filmsBtn.isEnabled = !person.filmUrls.isEmpty
         
-    
-        
+
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HomeworldVC" {
+            if let destination = segue.destination as? HomeworldVC{
+                destination.person = person
+            }
+        }
+    }
+    
+    
+    
+    
+    
 }
 
 
