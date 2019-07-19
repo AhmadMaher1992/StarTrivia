@@ -24,8 +24,6 @@ class SelectedPersonVC: UIViewController {
     
     
     
-    
-    
     var personApi = PersonApi()
     var person: Person!
    
@@ -68,17 +66,48 @@ class SelectedPersonVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "HomeworldVC" {
-            if let destination = segue.destination as? HomeworldVC{
+
+        //        if segue.identifier == "HomeworldVC" {
+//            if let destination = segue.destination as? HomeworldVC{
+//                destination.person = person
+//            }
+//        }
+        switch segue.identifier {
+        case Segue.homeworld.rawValue:
+            if let destination = segue.destination as? HomeworldVC {
                 destination.person = person
             }
+        case Segue.vehicles.rawValue :
+            if let destination = segue.destination as? VehiclesVC {
+                destination.person = person
+            }
+        case Segue.starships.rawValue:
+            if let destination = segue.destination as? StarshipsVC{
+                destination.person = person
+            }
+        case Segue.films.rawValue:
+            if let destination = segue.destination as? FilmsVC {
+                destination.person = person
+            }
+        default:
+            break
         }
+        
+        
+      
+        
+        
     }
     
-    
-    
-    
-    
+    enum Segue : String {
+        
+        case homeworld = "HomeworldVC"
+        case vehicles = "VehiclesVC"
+        case starships = "StarshipsVC"
+        case films = "FilmsVC"
+        
+    }
+  
 }
 
 
