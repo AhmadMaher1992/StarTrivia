@@ -8,9 +8,9 @@
 
 import UIKit
 
-class FilmsVC: UIViewController {
-
-     var person:Person!
+class FilmsVC: UIViewController , PersonProtocol{
+    var person: Person!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

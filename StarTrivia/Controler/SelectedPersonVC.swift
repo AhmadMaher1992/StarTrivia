@@ -10,7 +10,6 @@ import UIKit
 
 class SelectedPersonVC: UIViewController {
     
-    
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var heightLbl: UILabel!
     @IBOutlet weak var massLbl: UILabel!
@@ -72,42 +71,52 @@ class SelectedPersonVC: UIViewController {
 //                destination.person = person
 //            }
 //        }
-        switch segue.identifier {
-        case Segue.homeworld.rawValue:
-            if let destination = segue.destination as? HomeworldVC {
-                destination.person = person
-            }
-        case Segue.vehicles.rawValue :
-            if let destination = segue.destination as? VehiclesVC {
-                destination.person = person
-            }
-        case Segue.starships.rawValue:
-            if let destination = segue.destination as? StarshipsVC{
-                destination.person = person
-            }
-        case Segue.films.rawValue:
-            if let destination = segue.destination as? FilmsVC {
-                destination.person = person
-            }
-        default:
-            break
+      
+//
+//        switch segue.identifier {
+//        case Segue.homeworld.rawValue:
+//            if let destination = segue.destination as? HomeworldVC {
+//                destination.person = person
+//            }
+//        case Segue.vehicles.rawValue :
+//            if let destination = segue.destination as? VehiclesVC {
+//                destination.person = person
+//            }
+//        case Segue.starships.rawValue:
+//            if let destination = segue.destination as? StarshipsVC{
+//                destination.person = person
+//            }
+//        case Segue.films.rawValue:
+//            if let destination = segue.destination as? FilmsVC {
+//                destination.person = person
+//            }
+//        default:
+//            break
+//        }
+        
+        if var destination = segue.destination as? PersonProtocol {
+            destination.person = person
         }
-        
-        
       
         
         
     }
-    
-    enum Segue : String {
-        
-        case homeworld = "HomeworldVC"
-        case vehicles = "VehiclesVC"
-        case starships = "StarshipsVC"
-        case films = "FilmsVC"
-        
-    }
+//    
+//    enum Segue : String {
+//        
+//        case homeworld = "HomeworldVC"
+//        case vehicles = "VehiclesVC"
+//        case starships = "StarshipsVC"
+//        case films = "FilmsVC"
+//        
+//    }
   
+}
+
+
+//MARK: - Person protocol
+protocol PersonProtocol {
+    var person: Person! {get set}
 }
 
 

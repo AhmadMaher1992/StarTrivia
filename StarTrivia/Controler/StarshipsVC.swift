@@ -8,9 +8,9 @@
 
 import UIKit
 
-class StarshipsVC: UIViewController {
-
-    var person:Person!
+class StarshipsVC: UIViewController , PersonProtocol{
+    var person: Person!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

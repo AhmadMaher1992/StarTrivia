@@ -8,8 +8,12 @@
 
 import UIKit
 
-class HomeworldVC: UIViewController {
-    var person:Person!
+class HomeworldVC: UIViewController , PersonProtocol{
+    var person: Person!
+    
+    
+    
+//    var person:Person!
 
     override func viewDidLoad() {
         super.viewDidLoad()
