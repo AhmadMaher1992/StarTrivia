@@ -304,11 +304,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="To4-Cf-Fb2" customClass="BlackBGView" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="20" y="234.5" width="335" height="198"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JMv-1Y-6yq">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JMv-1Y-6yq">
                                         <rect key="frame" x="20" y="20" width="295" height="158"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Xl8-cP-pUT">
-                                                <rect key="frame" x="0.0" y="0.0" width="128.5" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="27.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjJ-Mt-dng">
                                                         <rect key="frame" x="0.0" y="0.0" width="56" height="27.5"/>
@@ -319,8 +319,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-dS-aRC">
-                                                        <rect key="frame" x="64" y="0.0" width="64.5" height="27.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJi-dS-aRC">
+                                                        <rect key="frame" x="64" y="0.0" width="231" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -328,7 +328,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-Fb-g3s">
-                                                <rect key="frame" x="0.0" y="43.5" width="155.5" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="43.5" width="295" height="27.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Climate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvv-Fz-xhT">
                                                         <rect key="frame" x="0.0" y="0.0" width="83" height="27.5"/>
@@ -339,8 +339,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7P-eX-9tc">
-                                                        <rect key="frame" x="91" y="0.0" width="64.5" height="27.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7P-eX-9tc">
+                                                        <rect key="frame" x="91" y="0.0" width="204" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -348,7 +348,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2po-nE-Uyn">
-                                                <rect key="frame" x="0.0" y="87" width="154" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="87" width="295" height="27.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terrain:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agi-Tu-un1">
                                                         <rect key="frame" x="0.0" y="0.0" width="81.5" height="27.5"/>
@@ -359,8 +359,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tv4-bG-7Kc">
-                                                        <rect key="frame" x="89.5" y="0.0" width="64.5" height="27.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tv4-bG-7Kc">
+                                                        <rect key="frame" x="89.5" y="0.0" width="205.5" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -368,7 +368,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zTE-jm-YZV">
-                                                <rect key="frame" x="0.0" y="130.5" width="195" height="27.5"/>
+                                                <rect key="frame" x="0.0" y="130.5" width="295" height="27.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAN-Z0-yyC">
                                                         <rect key="frame" x="0.0" y="0.0" width="122.5" height="27.5"/>
@@ -379,8 +379,8 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neT-Yr-stb">
-                                                        <rect key="frame" x="130.5" y="0.0" width="64.5" height="27.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neT-Yr-stb">
+                                                        <rect key="frame" x="130.5" y="0.0" width="164.5" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -414,6 +414,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iQU-zy-nw7"/>
                     </view>
+                    <connections>
+                        <outlet property="climateLBL" destination="a7P-eX-9tc" id="80E-Aa-Y2Y"/>
+                        <outlet property="nameLBL" destination="dJi-dS-aRC" id="3iM-Tw-5DO"/>
+                        <outlet property="populationLBL" destination="neT-Yr-stb" id="tGZ-ZM-LJB"/>
+                        <outlet property="terrainLBL" destination="Tv4-bG-7Kc" id="fkn-5h-qts"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mld-9F-9ph" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
