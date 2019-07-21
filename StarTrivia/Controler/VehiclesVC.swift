@@ -23,14 +23,36 @@ class VehiclesVC: UIViewController , PersonProtocol{
     @IBOutlet weak var previousBtn: UIButton!
     @IBOutlet weak var nextBtn: UIButton!
     
-    
-    
+    let api = VehicleApi()
+    var vehicles = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(person.name)
+        vehicles = person.vechileUrls
+        guard let firstVehicle = vehicles.first else {return}
+        getVehicle(url: firstVehicle)
+      
+    }
+    func getVehicle(url: String)  {
+        api.getVehicle(url: url) { (vehicle) -> (Void) in
+            if let vehicle = vehicle{
+              self.setUPView(vehicle: vehicle)
+            }
+        }
     }
     
+    //setUPView to UPDATE UI
+    func setUPView(vehicle: Vehicle)  {
+        nameLBL.text = vehicle.name
+        modelLBL.text = vehicle.model
+        makerLBL.text = vehicle.manufacturer
+        costLBL.text = vehicle.cost
+        lengthLBL.text = vehicle.length
+        speedLBL.text = vehicle.speed
+        crewLBL.text = vehicle.crew
+        passenLBL.text = vehicle.passengers
+        
+    }
 
     @IBAction func previousClicked(_ sender: Any) {
     }
