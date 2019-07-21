@@ -445,7 +445,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vehicles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jgy-Az-ijs">
-                                <rect key="frame" x="20" y="84" width="335" height="80"/>
+                                <rect key="frame" x="20" y="72" width="335" height="80"/>
                                 <fontDescription key="fontDescription" name="StarJediOutline" family="Star Jedi Outline" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -628,7 +628,7 @@
                                     <constraint firstAttribute="height" constant="329" id="xvi-Yh-uFC"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-1h-oNx">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvU-1h-oNx" customClass="FadeEnabledBtn" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="20" y="601" width="112" height="46"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="21"/>
                                 <state key="normal" title="Previous">
@@ -638,7 +638,7 @@
                                     <action selector="previousClicked:" destination="PAk-GC-VFT" eventType="touchUpInside" id="0mP-kh-cFu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRc-3k-B5X">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRc-3k-B5X" customClass="FadeEnabledBtn" customModule="StarTrivia" customModuleProvider="target">
                                 <rect key="frame" x="297" y="601" width="58" height="46"/>
                                 <fontDescription key="fontDescription" name="StarJedi" family="Star Jedi" pointSize="21"/>
                                 <state key="normal" title="Next">
@@ -658,7 +658,7 @@
                             <constraint firstItem="Jgy-Az-ijs" firstAttribute="leading" secondItem="E1C-dY-b9G" secondAttribute="leading" constant="20" id="Pom-DD-HHK"/>
                             <constraint firstItem="yoK-tG-4uQ" firstAttribute="trailing" secondItem="78X-GP-7zR" secondAttribute="trailing" constant="20" id="TMO-lj-QXZ"/>
                             <constraint firstAttribute="bottom" secondItem="tal-SP-d7E" secondAttribute="bottom" id="UAd-wj-ffo"/>
-                            <constraint firstItem="Jgy-Az-ijs" firstAttribute="top" secondItem="yoK-tG-4uQ" secondAttribute="top" constant="20" id="eC0-zn-v7K"/>
+                            <constraint firstItem="Jgy-Az-ijs" firstAttribute="top" secondItem="yoK-tG-4uQ" secondAttribute="top" constant="8" id="eC0-zn-v7K"/>
                             <constraint firstItem="78X-GP-7zR" firstAttribute="leading" secondItem="yoK-tG-4uQ" secondAttribute="leading" constant="20" id="egX-cE-Tdl"/>
                             <constraint firstItem="yoK-tG-4uQ" firstAttribute="bottom" secondItem="XRc-3k-B5X" secondAttribute="bottom" constant="20" id="imD-n0-olm"/>
                             <constraint firstItem="UvU-1h-oNx" firstAttribute="leading" secondItem="yoK-tG-4uQ" secondAttribute="leading" constant="20" id="lOb-xk-tH8"/>
@@ -697,7 +697,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="starships" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jCa-hW-2lV">
-                                <rect key="frame" x="20" y="84" width="335" height="58.5"/>
+                                <rect key="frame" x="20" y="84" width="335" height="80"/>
                                 <fontDescription key="fontDescription" name="StarJediOutline" family="Star Jedi Outline" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
