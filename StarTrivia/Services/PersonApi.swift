@@ -16,7 +16,7 @@ class PersonApi {
     // Web Request with Alamofire & parse data with Codable
     func getRandomPersonAlamoDecoder(id: Int ,completion: @escaping PersonResponseCompletion) {
         
-        guard let url = URL(string: "\(PERSON_URL)\(1)") else {return}
+        guard let url = URL(string: "\(PERSON_URL)\(id)") else {return}
         AF.request(url).responseJSON { (response) in
             if let error = response.error {
                 debugPrint(error.localizedDescription)
