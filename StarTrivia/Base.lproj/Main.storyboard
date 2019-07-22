@@ -245,14 +245,19 @@
                                     <constraint firstItem="sXH-z3-mY5" firstAttribute="centerY" secondItem="CsT-nA-rZO" secondAttribute="centerY" id="nEM-Cr-9Xg"/>
                                 </constraints>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Xfm-nm-nGy">
+                                <rect key="frame" x="188.5" y="731" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CsT-nA-rZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0f8-vg-Ly8"/>
+                            <constraint firstItem="fxi-J8-bgf" firstAttribute="top" secondItem="Xfm-nm-nGy" secondAttribute="bottom" constant="20" id="3SP-MU-pbi"/>
                             <constraint firstItem="CsT-nA-rZO" firstAttribute="top" secondItem="KtV-Ir-Yhp" secondAttribute="bottom" constant="14" id="4m4-dA-QUl"/>
                             <constraint firstItem="KtV-Ir-Yhp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9RQ-Q9-JIQ"/>
                             <constraint firstItem="CsT-nA-rZO" firstAttribute="width" secondItem="KtV-Ir-Yhp" secondAttribute="width" id="E5f-dI-IPa"/>
                             <constraint firstItem="KtV-Ir-Yhp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="I14-Xs-BLG"/>
+                            <constraint firstItem="Xfm-nm-nGy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IB8-zh-JlA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iFq-DM-iWE" secondAttribute="trailing" constant="20" id="IVJ-98-qe8"/>
                             <constraint firstAttribute="bottom" secondItem="REO-G3-tiF" secondAttribute="bottom" id="PKe-C4-hnF"/>
                             <constraint firstItem="fxi-J8-bgf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QVH-v6-kSE"/>
@@ -276,6 +281,7 @@
                         <outlet property="homeworldBtn" destination="Nv7-3i-j6T" id="sNZ-nL-jzp"/>
                         <outlet property="massLbl" destination="2dP-ik-2tg" id="Bln-zy-V2r"/>
                         <outlet property="nameLbl" destination="q3z-FN-mME" id="oq8-mz-Gpg"/>
+                        <outlet property="spinner" destination="Xfm-nm-nGy" id="PrR-Q6-Ojm"/>
                         <outlet property="starshipsBtn" destination="tdA-mU-2NW" id="9pc-dw-afx"/>
                         <outlet property="vehiclesBtn" destination="VJI-wc-X1G" id="TTu-hf-AJ8"/>
                     </connections>
